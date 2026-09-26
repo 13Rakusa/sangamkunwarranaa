@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Resume of Sangam Kunwar Rana — BBA graduate in Banking & Insurance with two years of accounting experience, developing toward business analysis, supply chain and logistics.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <title>Resume — Sangam Kunwar Rana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #24583C;
+      --green-ink: #12291C;
+      --yellow: #F5E74E;
+      --yellow-deep: #E8D62E;
+      --cream: #F7F5EF;
+      --paper: #FFFFFF;
+      --ink: #17211B;
+      --muted: #55645B;
+      --line: #E3DFD2;
+      --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--cream);
+    }
+
+    .sheet {
+      width: min(820px, 100%);
+      margin: 2.5rem auto 4rem;
+      background: var(--paper);
+      padding: clamp(1.8rem, 5vw, 3.5rem);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      box-shadow: 0 30px 60px -40px rgba(18, 41, 28, 0.4);
+    }
+
+    h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0; }
+
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      width: min(820px, 100%);
+      margin: 1.4rem auto 0;
+      padding-inline: clamp(0.2rem, 3vw, 1rem);
+      font-size: 0.85rem;
+    }
+
+    .toolbar a { color: var(--green); font-weight: 600; text-decoration: none; }
+    .toolbar a:hover { text-decoration: underline; }
+
+    .print-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1rem;
+      border: 0;
+      border-radius: 4px;
+      background: var(--green);
+      color: var(--cream);
+      font: 600 0.85rem var(--font-body);
+      cursor: pointer;
+    }
+
+    .print-btn:hover { background: #1B452E; }
+
+    /* ---------- Header ---------- */
+    header.sheet-head { padding-bottom: 1.4rem; border-bottom: 2.5px solid var(--green); position: relative; }
+
+    header.sheet-head::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 64px;
+      height: 2.5px;
+      background: var(--yellow-deep);
+    }
+
+    .sheet-head h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); color: var(--green-ink); }
+
+    .role {
+      color: var(--green);
+      font-weight: 600;
+      margin: 0.35rem 0 0.7rem;
+      font-size: 0.98rem;
+    }
+
+    .contact-line { color: var(--muted); font-size: 0.85rem; }
+    .contact-line span { white-space: nowrap; }
+    .contact-line span + span::before { content: '·'; margin: 0 0.5rem; color: var(--line); }
+
+    /* ---------- Sections ---------- */
+    section { margin-top: 1.7rem; }
+
+    .sec-title {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--green);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0.45rem;
+      margin: 0 0 0.9rem;
+    }
+
+    .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+    .job-head h3 { font-size: 1.15rem; }
+    .job-meta { color: var(--muted); font-size: 0.85rem; white-space: nowrap; }
+
+    .org { color: var(--muted); font-size: 0.9rem; margin: 0.15rem 0 0.6rem; }
+
+    ul.bullets { margin: 0.4rem 0 0; padding: 0; list-style: none; }
+    ul.bullets li { position: relative; padding-left: 1.1rem; margin-bottom: 0.45rem; font-size: 0.92rem; }
+    ul.bullets li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.52em;
+      width: 7px;
+      height: 7px;
+      background: var(--yellow);
+      border: 1px solid rgba(23, 33, 27, 0.25);
+    }
+
+    .cap-grid { display: grid; grid-template-columns: 110px 1fr; row-gap: 0.55rem; }
+    .cap-grid dt { font-weight: 700; font-size: 0.85rem; color: var(--green); }
+    .cap-grid dd { margin: 0; font-size: 0.92rem; }
+
+    .meta-grid { display: grid; grid-template-columns: 110px 1fr; row-gap: 0.5rem; font-size: 0.92rem; }
+    .meta-grid dt { font-weight: 700; font-size: 0.85rem; color: var(--green); }
+    .meta-grid dd { margin: 0; }
+
+    .back-link { margin-top: 2rem; display: inline-block; }
+
+    @media (max-width: 560px) {
+      .cap-grid, .meta-grid { grid-template-columns: 1fr; row-gap: 0.1rem; }
+      .cap-grid dd, .meta-grid dd { margin-bottom: 0.5rem; }
+    }
+
+    @media print {
+      body { background: var(--paper); font-size: 13px; }
+      .sheet { width: 100%; margin: 0; border: 0; box-shadow: none; border-radius: 0; padding: 0; }
+      .toolbar, .back-link { display: none; }
+      section { margin-top: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <a href="../">← Back to portfolio</a>
+    <button class="print-btn" type="button" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <main class="sheet">
+    <header class="sheet-head">
+      <h1>Sangam Kunwar Rana</h1>
+      <p class="role">BBA Graduate — Banking &amp; Insurance · Developing toward Business Analysis, Supply Chain &amp; Logistics</p>
+      <p class="contact-line">
+        <span>Waling-9, Syangja, Nepal</span>
+        <span>+977 9848244406</span>
+        <span>sangamkunwarana@gmail.com</span>
+        <span>linkedin.com/in/sangam-kunwar-rana-14535a407</span>
+      </p>
+    </header>
+
+    <section aria-labelledby="profile">
+      <h2 class="sec-title" id="profile">Profile</h2>
+      <p style="margin:0">
+        BBA graduate in Banking &amp; Insurance with two years of Account Assistant experience in an
+        audit-firm environment. Grounded in careful, verifiable accounting work — vouching,
+        reconciliations and audit documentation — and now building toward business analysis, supply
+        chain and logistics roles through structured self-study, spreadsheet depth and process thinking.
+      </p>
+    </section>
+
+    <section aria-labelledby="experience">
+      <h2 class="sec-title" id="experience">Experience</h2>
+      <div class="job-head">
+        <h3>Account Assistant — Audit &amp; Consulting Firm</h3>
+        <span class="job-meta">Baluwatar, Kathmandu · 2 years</span>
+      </div>
+      <p class="org">Supporting audit engagements across multiple clients</p>
+      <ul class="bullets">
+        <li>Prepared and organized audit working papers — vouching schedules, ledger scrutiny notes and reconciliation papers — across multiple client engagements.</li>
+        <li>Ran monthly bank and ledger reconciliations for client accounts, tracing mismatches to source documents and summarizing findings for senior review.</li>
+        <li>Maintained accounting records in line with the documentation standards expected in an audit environment.</li>
+        <li>Built reusable Excel templates for vouchers, ledgers and monthly summaries, reducing manual re-entry with structured formulas and validation rules.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="education">
+      <h2 class="sec-title" id="education">Education</h2>
+      <div class="job-head">
+        <h3>Bachelor of Business Administration (BBA) — Banking &amp; Insurance</h3>
+      </div>
+      <p class="org">Apex College · Mid Baneshwor, Kathmandu</p>
+      <ul class="bullets">
+        <li>Four-year business foundation: accounting, finance, management and banking practice.</li>
+        <li>Ongoing professional development: Excel workflows, data analysis, Power BI fundamentals, supply chain basics.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="capability">
+      <h2 class="sec-title" id="capability">Capability — an honest view</h2>
+      <dl class="cap-grid">
+        <dt>Working now</dt>
+        <dd>Accounting &amp; bookkeeping · Audit support &amp; documentation · Bank &amp; ledger reconciliation · MS Excel (daily use) · Professional communication</dd>
+        <dt>Developing</dt>
+        <dd>Data analysis in Excel (pivots, lookups) · Power BI fundamentals · Business process documentation · Supply chain fundamentals</dd>
+        <dt>Planned</dt>
+        <dd>SQL &amp; basic Python · ERP systems (SAP/Oracle) · Inventory &amp; warehouse operations · Supply chain certification</dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="additional">
+      <h2 class="sec-title" id="additional">Additional</h2>
+      <dl class="meta-grid">
+        <dt>Direction</dt>
+        <dd>Business analysis · Supply chain · Logistics · Operations</dd>
+        <dt>Languages</dt>
+        <dd>Nepali (native) · English (professional)</dd>
+        <dt>Online</dt>
+        <dd>facebook.com/sangamkunwarana · instagram.com/sangamkunwaar</dd>
+      </dl>
+    </section>
+
+    <p style="margin-top:2rem;color:var(--muted);font-size:0.82rem">References available on request.</p>
+
+    <a class="back-link" href="../">← Back to portfolio</a>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & editor noise
+*.log
+.vscode/
+.idea/
